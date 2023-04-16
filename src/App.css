@@ -1,38 +1,393 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+#appMain{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navbar{
+  position: fixed;
+  top:0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  width: 100%;
+  height: 8vh;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  z-index: 50;
+}
+#navbar #navItem1{
+  position:relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height:60%;
+  width:10%;
+}
+#navbar #navItem1 #logoVideo{
+  position:relative;
+  background:white;
+  height:100%;
+  width:30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+}
+#navbar #navItem1 #logoVideo video{
+  width:200%;
+  height:200%;
+  object-fit:cover;
+  object-position:center;
+}
+#navbar #navItem1 h2{
+  font-size: 2vh;
+}
+#navbar #navItem2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40vw;
+}
+#navbar #navItem2 a{
   color: white;
+  text-decoration: none;
+  font-size: 1.3vh;
 }
 
-.App-link {
-  color: #61dafb;
+.catalog{
+  position: relative;
+  /* top:0; */
+  width: 100%;
+  height:100%;
+}
+.catalog video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -20;
+}
+.catalog .leftSide{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  /* background: green; */
+  display: block;
+  padding-top: 20vh;
+  z-index: 1;
+  /* border:1px solid green; */
+}
+.catalog .leftSide .text1{
+  position: relative;
+  /* border: 1px solid gold; */
+  width:100%;
+  height: 50vh;
+  padding:0 80% 0 10%;
+  color:rgb(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+.catalog .leftSide .text1 h1{
+  font-size: 11vh;
+  /* transform: translateY(50%); */
+  animation: showUP 1.5s ease;
+}
+@keyframes showUP {
+  0%{
+    transform:rotateY(-90deg);
+    opacity:0;
+  }
+  50%{
+    transform:rotateY(-45deg);
+    opacity:0;
+  }
+  100%{
+    transform:rotateY(0deg);
+    opacity:1;
+  }
+}
+.catalog .leftSide .text2{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  color: rgb(255, 255, 255, 0.8);
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 10vh;
+  padding-left: 5vw;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+.catalog .leftSide .text2 p{
+  font-size: 2vh;
+  /* transform: translateY(5vh); */
+  animation: showOP 2s ease;
+  
+}
+@keyframes showOP {
+  from{
+    transform:translateY(100%);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0%);
+    opacity:1;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.catalog .rightSide{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  /* background: green; */
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  z-index: 1;
+  /* border:1px solid green; */
+}
+.catalog .rightSide .translucent{
+  position:absolute;
+  width:90%;
+  height:70%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition:0.5s ease-in;
+  cursor:pointer;
+}
+.catalog .rightSide .card1{
+  transform:rotate(15deg) translate(70%, -15%);
+}
+.catalog .rightSide .cardTemp{
+  transform:rotate(15deg) translate(200%, -15%);
+}
+.catalog .rightSide .card2{
+  transform:rotate(18deg) translate(80%, -15%);
+
+}
+.catalog .rightSide .card3{
+  transform:rotate(21deg) translate(90%, -15%);
+
+}
+
+
+.catalogy{
+  position: relative;
+  width: 100%;
+  height:100%;
+}
+.catalogy #shops{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.catalogy #shops .shopTitle{
+  /* border:1px solid white; */
+  height:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:rgb(255, 255, 255, 0.9);
+  /* box-shadow: inset 0px 2px 15px 20px #333; */
+
+}
+.catalogy #shops .shopTitle .text{
+  /* border:1px solid white; */
+}
+.catalogy #shops .shopTitle .text h1{
+  font-size:9vh;
+  margin-bottom: 2%;
+  text-align:center;
+}
+.catalogy #shops .shopTitle .text p{
+  text-align:center;
+  font-size: 2vh;
+  font-family:'Poppins', sans-serif;
+}
+.catalogy #shops .shopShops{
+  position:relative;
+  /* border:1px solid gold; */
+  height:50%;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  padding:0 5%;
+}
+.catalogy #shops .shopShops .shopCard{
+  position: relative;
+  width:25%;
+  height: 50%;
+  background:linear-gradient(to bottom, #333, #333, #333, transparent, transparent);
+  /* -webkit-box-reflect: below 2.5px linear-gradient(to bottom,transparent, transparent, transparent,transparent, rgba(0,0,0,0.2)); */
+  transition: 0.5s ease;
+  border-radius: 20px;
+}
+.catalogy #shops .shopShops .shopCard:hover img{
+  transform: translateY(-50%);
+}
+.catalogy #shops .shopShops .shopCard:hover .description{
+  transform: translateY(50%);
+}
+
+.catalogy #shops .shopShops .shopCard img{
+  /* border: 1px solid teal; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  z-index: 5;
+  border-radius: 20px;
+}
+.catalogy #shops .shopShops .shopCard .description{
+  /* border: 4px solid gold; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  z-index: 4;
+  color: rgb(255, 255, 255, 0.9);
+}
+.catalogy #shops .shopShops .shopCard .description h1{
+  height: 30%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  font-size: 2.5vh;
+  text-shadow: 0 0 5px black;
+}
+.catalogy #shops .shopShops .shopCard .description p{
+  height: 20%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid teal; */
+  font-size: 1.5vh;
+  padding: 2% 5%;
+  font-weight: 100;
+  font-family:'Poppins', sans-serif;
+}
+.catalogy #shops .shopShops .shopCard .description .button{
+  height:30%;
+  width:100%;
+  /* border:1px solid red; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.catalogy #shops .shopShops .shopCard .description .button button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: transparent;
+  padding:1vh 3vh;
+  color:rgb(255, 255, 255, 0.5);
+  border: none;
+  box-shadow:0 0 5px 1px #333333;
+  border-radius:2vh;
+  transition:0.1s ease-in;
+  cursor:pointer;
+  font-size: 1.2vh;
+}
+.catalogy #shops .shopShops .shopCard .description .button button:hover{
+  box-shadow:0 0 5px 1px #aaa, 0 -1px 8px 13px rgb(255, 255, 255, 0.1);
+  color:rgb(255, 255, 255, 0.9);
+}
+
+/* for events */
+.cataloga{
+  position: relative;
+  width: 100%;
+  height:200%;
+  background-color: teal;
+}
+.cataloga #events{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.cataloga #events .eventsTitle{
+  /* border:1px solid white; */
+  height:30%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:rgb(255, 255, 255, 0.9);
+  /* box-shadow: inset 0px 2px 15px 20px #333; */
+
+}
+.cataloga #events .eventsTitle .text{
+  /* border:1px solid white; */
+}
+.cataloga #events .eventsTitle .text h1{
+  font-size:9vh;
+  margin-bottom: 2%;
+  text-align:center;
+  padding: 0 20%;
+}
+.cataloga #events .eventsTitle .text p{
+  text-align:center;
+  font-size: 1.7vh;
+  font-family:'Poppins', sans-serif;
+
+}
+
+/* for event gallery */
+#eventGallery{
+  width: 100%;
+  height:70%;
+  background:gold;
+  position:relative;
+  display: flex;
+}
+#eventGallery :is(#eventLeft, #eventRight){
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background:pink;
+}
+#eventGallery #eventRight{
+  right:0;
+}
+#eventGallery #eventLeft{
+  left:0;
+}
+#eventGallery #eventRight :is(#eventRightTop, #eventRightCenter, #eventRightBottom){
+  width: 100%;
+  height: 50%;
+  position:absolute;
+}
+#eventGallery #eventRight #eventRightTop{
+  background:#333;
+  top:0;
+}
+#eventGallery #eventRight #eventRightCenter{
+  bottom: 0;
+}
+#eventGallery #eventRight #eventRightBottom{
+  bottom: 0;
+  background:#aaa;
 }
