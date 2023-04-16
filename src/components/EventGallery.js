@@ -1,18 +1,19 @@
+import Obiaa from '../assets/Obiaa.MP4';
 import VideoEvG from "./VideoEvG";
 const EventsGallery = () => {
     return ( 
         <div id="eventGallery">
             <div id="eventLeft">
-                    <VideoEvG></VideoEvG>
+                    <VideoEvG vidURL={Obiaa}></VideoEvG>
             </div>
             <div id="eventRight">
                 <div id="eventRightTop">
-                    <VideoEvG></VideoEvG>
+                    <VideoEvG vidURL={Obiaa}></VideoEvG>
                 </div>
                 <div id="eventRightCenter">
                 </div>
                 <div id="eventRightBottom">
-                    <VideoEvG></VideoEvG>    
+                    <VideoEvG vidURL={Obiaa}></VideoEvG>
                 </div>
             </div>
         </div>

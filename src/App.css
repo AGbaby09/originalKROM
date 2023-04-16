@@ -393,6 +393,7 @@
 }
 #eventGallery #eventRight #eventRightCenter{
   bottom: 0;
+  display:none;
 }
 #eventGallery #eventRight #eventRightBottom{
   bottom: 0;
