@@ -1,3 +1,5 @@
+import NavlinkTab from "./NavlinkTab";
+
 const Navbar = ({logoIMG}) => {
     return ( 
         <div id="navbar">
@@ -13,6 +15,14 @@ const Navbar = ({logoIMG}) => {
                 <a href="/">EVENTS</a>
                 <a href="/">CARZ</a>
                 <a href="/">LOGIN</a>
+
+                <div className="navlinks-tab">
+                    <NavlinkTab />
+                    <NavlinkTab />
+                    <NavlinkTab />
+                    <NavlinkTab />
+                    <NavlinkTab />
+                </div>
             </div>
         </div>
     );

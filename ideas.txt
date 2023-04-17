@@ -1,0 +1,2 @@
+For the shop component:
+	on shopCard:hover shop component background change to shop target photo as shopCard turns to shop now button.
