@@ -1,5 +1,6 @@
 import Stripped from '../assets/striped.jpg'
 import Inner from '../assets/inner.jpg'
+import CustomNav from './CustomNav';
 
 const Carz = () => {
     return ( 
@@ -15,9 +16,7 @@ const Carz = () => {
                         <div id="info-bridge"></div>
                         <div id="info-title">
                             <h3>KROM <br />FLEETS</h3>
-                            <span>
-                                <p>FOLLOW US</p>
-                            </span>
+                            <CustomNav />
                         </div>
                     </div>
                 </div>
