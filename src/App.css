@@ -105,24 +105,28 @@
 }
 #navlink-tab{
   position:absolute;
-  top:100%;
+  transform:translateY(74%);
+  display:grid;
   width:110%;
   height: 200%;
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
-  display:grid;
   border-radius: 0 0 5px 5px;
   padding: 0.5vh 0;
-  transition:0.5s ease-in;
+  transition:0.01s ease-in;
   z-index: 1;
+  visibility:hidden;
+}
+#navbar #navItem2 span:hover>#navlink-tab{
+  visibility:visible;
 }
 #navlink-tab>a{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition:0.1s linear;
+  transition:0.05s linear;
   /* font-size:200%; */
   font-size: 1.4vh;
   color: rgb(255, 255, 255, 0.9);
