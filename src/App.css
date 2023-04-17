@@ -85,10 +85,14 @@
   justify-content: center;
   height: 100%;
   width:100%;
+  transition: 1s linear;
 }
 #navbar #navItem2 a i{
   font-size:2vh;
   transition:0.1s linear;
+}
+#navbar #navItem2 a:hover i{
+  display: none;
 }
 #navbar #navItem2 .navlinks-tab{
   /* border:1px solid red; */
@@ -487,4 +491,60 @@
   height:100%;
   object-fit: cover;
   object-position: center;
+}
+
+
+/* for carz */
+.cataloger{
+  margin-top:30vh;
+  width: 100%;
+  height:100vh;
+  position: relative;
+  overflow:hidden;
+}
+#carz{
+  position:relative;
+  width:100%;
+  height: 100%;
+  /* background:rgb(0, 128, 128, 0.2); */
+}
+#carz .carzSide{
+  /* border:1px solid red; */
+  width: 100%;
+  height: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#carz .carzSide .carzLeft{
+  /* border:1px solid red; */
+  height:100%;
+  width:60%;
+}
+#carz .carzSide .carzRight{
+  /* border:1px solid gold; */
+  height:100%;
+  width:40%;
+}
+.carzIMG{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.carzIMG img{
+  object-fit: center;
+  object-position: center;
+  width:110%;
+  height:110%;
+}
+.carzInfo{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  padding: 0 20%;
+  color: rgb(255, 255, 255, 0.9);
 }
