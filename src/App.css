@@ -605,7 +605,8 @@
   animation:length 3s linear infinite;
 
 }
-
+.carzInfo #info-title span:hover hr{animation:none;}
+.carzInfo #info-title span:hover .circleIcon :is(:nth-child(odd), :nth-child(even)){animation:none;}
 .circleIcon{
   position: absolute;
   width:40%;
@@ -626,6 +627,7 @@
   align-items:center;
   justify-content: center;
   overflow: hidden;
+  cursor:pointer;
 }
 .circleIcon :nth-child(odd){
   animation:toggleEven 3s linear infinite;
