@@ -1,4 +1,5 @@
-import ShopImg from '../assets/thriftSTORE.png'
+import Stripped from '../assets/striped.jpg'
+import Inner from '../assets/inner.jpg'
 
 const Carz = () => {
     return ( 
@@ -6,7 +7,7 @@ const Carz = () => {
             <div className="carzTop carzSide">
                 <div className="carzLeft">
                     <div className="carzIMG">
-                        <img src={ShopImg} alt="" />
+                        <img src={Inner} alt="" />
                     </div>
                 </div>
                 <div className="carzRight">
@@ -23,7 +24,7 @@ const Carz = () => {
                 </div>
                 <div className="carzRight">
                     <div className="carzIMG">
-                        <img src={ShopImg} alt="" style={{transform:'translateX(-10%)'}}/>
+                        <img src={Stripped} alt="" style={{transform:'translateX(-10%)'}}/>
                     </div>
                 </div>
             </div>
