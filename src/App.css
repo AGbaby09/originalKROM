@@ -115,7 +115,7 @@
   -webkit-backdrop-filter: blur(10.3px);
   border-radius: 0 0 5px 5px;
   padding: 0.5vh 0;
-  transition:0.01s ease-in;
+  transition:0.01s linear;
   z-index: 1;
   visibility:hidden;
 }
@@ -126,7 +126,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition:0.05s linear;
+  transition:0.01s linear;
   /* font-size:200%; */
   font-size: 1.4vh;
   color: rgb(255, 255, 255, 0.9);
