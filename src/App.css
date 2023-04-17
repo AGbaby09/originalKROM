@@ -64,27 +64,50 @@
   align-items: center;
   justify-content: space-evenly;
   width: 40vw;
+  height: 100%;
 }
-
-#navbar #navItem2 a{
+#navbar #navItem2 span{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width:18%;
+  /* border:1px solid red; */
+}
+#navbar #navItem2 span>a{
+  /* border:1px solid red; */
   font-size: 1.3vh;
   color: rgb(255, 255, 255, 0.9);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width:100%;
+}
+#navbar #navItem2 a i{
+  font-size:2vh;
+  transition:0.1s linear;
+}
+#navbar #navItem2 a:hover i{
+  transform:rotate(-180deg);
 }
 #navbar #navItem2 .navlinks-tab{
   /* border:1px solid red; */
   position:absolute;
-  width:60%;
-  height: 850%;
-  top:250%;
+  width:64%;
+  height: 200%;
+  top:100%;
   justify-content: space-evenly;
   display:flex;
   align-items:center;
 }
 #navlink-tab{
-  position:relative;
-  width:25%;
-  height: 100%;
+  position:absolute;
+  top:100%;
+  width:111%;
+  height: 200%;
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.3px);
@@ -93,15 +116,19 @@
   border-radius: 0 0 5px 5px;
   padding: 0.5vh 0;
   transition:0.5s ease-in;
+  z-index: 1;
 }
-#navlink-tab a{
+#navlink-tab>a{
   display: flex;
   align-items: center;
   justify-content: center;
   transition:0.1s linear;
   /* font-size:200%; */
+  font-size: 1.4vh;
+  color: rgb(255, 255, 255, 0.9);
+  text-decoration: none;
 }
-#navlink-tab a:hover{
+#navlink-tab>a:hover{
   background: rgba(185, 180, 180, 0.4);
   text-shadow: 0 0 5px rgba(0, 0, 0);
 }

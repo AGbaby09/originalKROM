@@ -10,16 +10,28 @@ const Navbar = ({logoIMG}) => {
                 <h2>kROMcLUB</h2>
             </div>
             <div id="navItem2">
-                <a href="/">HOME</a>
-                <a href="/">SHOPS</a>
-                <a href="/">EVENTS</a>
-                <a href="/">CARZ</a>
-                <a href="/">LOGIN</a>
+                <span>
+                    <a href="/">HOME</a>
+                </span>
+                <span>
+                    <a href="/">SHOPS <i class='bx bx-chevron-down'></i></a>
+                    <NavlinkTab />
+                </span>
+                <span>
+                    <a href="/">EVENTS <i class='bx bx-chevron-down'></i></a>
+                    <NavlinkTab />
+                </span>
+                <span>
+                    <a href="/">CARZ <i class='bx bx-chevron-down'></i></a>
+                    <NavlinkTab />
+                </span>
+                <span>
+                    <a href="/">LOGIN</a>
+                </span>
 
                 <div className="navlinks-tab">
-                    <NavlinkTab />
-                    <NavlinkTab />
-                    <NavlinkTab />
+                    {/* <NavlinkTab />
+                    <NavlinkTab /> */}
                 </div>
             </div>
         </div>
