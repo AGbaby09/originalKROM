@@ -12,7 +12,7 @@ const Carz = () => {
                 </div>
                 <div className="carzRight">
                     <div className="carzInfo">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laudantium, sunt in distinctio, repellendus quia corrupti impedit, quos incidunt officiis amet. Quis magni beatae vitae enim laborum hic, voluptatem ad dolorum aut facere alias provident qui error soluta numquam ex necessitatibus consequuntur earum illum, quisquam omnis! Fugiat molestiae voluptates aperiam.</p>
+                        <div id="info-bridge"></div>
                     </div>
                 </div>
             </div>
