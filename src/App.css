@@ -72,10 +72,10 @@
   text-decoration: none;
 }
 #navbar #navItem2 .navlinks-tab{
-  border:1px solid red;
+  /* border:1px solid red; */
   position:absolute;
   width:100%;
-  height: 800%;
+  height: 850%;
   top:250%;
   justify-content: space-evenly;
   display:flex;
@@ -90,11 +90,19 @@
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   display:grid;
+  border-radius: 0 0 5px 5px;
+  padding: 0.5vh 0;
+  transition:0.5s ease-in;
 }
 #navlink-tab a{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition:0.1s linear;
+}
+#navlink-tab a:hover{
+  background: rgba(185, 180, 180, 0.4);
+  text-shadow: 0 0 5px rgba(0, 0, 0);
 }
 
 .catalog{
