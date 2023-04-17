@@ -577,14 +577,55 @@
 }
 .carzInfo #info-title span{
   position: absolute;
-  border:1px solid white;
+  /* border:1px solid white; */
   width:100%;
   height:10%;
   display: flex;
   align-items:center;
   bottom:35%;
   padding: 0 15%;
-  /* justify-content:center; */
+  transition: 0.1s linear;
+  /* justify-content:space-between; */
+}
+
+.carzInfo #info-title span p{
+  color:white;
+  width: 22%;
+}
+.carzInfo #info-title span hr{
+  /* height: 5vh; */
+  /* position:absolute;
+  right:0; */
+  width: 11%;
+  border-bottom:3px solid white;
+  /* justify-self: center; */
+  /* margin: 0 0 0 1vh; */
+
+}
+
+.circleIcon{
+  position: absolute;
+  width:40%;
+  /* background-color: rgb(255, 0, 0, 0.3); */
+  height:100%;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+  left:50%;
+  transform: translateX(-30%);
+}
+.circleIcon .circle{
+  width:4vh;
+  height: 4vh;
+  background-color: transparent;
+  border-radius:50%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  overflow: hidden;
+}
+.circleIcon .circle i{
+  font-size: 3vh;
 }
 @keyframes showCar {
   from{
@@ -592,5 +633,13 @@
   }
   to{
     opacity: 1 ;
+  }
+}
+@keyframes length {
+  from{
+    width: 0 ;
+  }
+  to{
+    width: 30% ;
   }
 }
