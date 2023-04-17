@@ -20,8 +20,6 @@ const Navbar = ({logoIMG}) => {
                     <NavlinkTab />
                     <NavlinkTab />
                     <NavlinkTab />
-                    <NavlinkTab />
-                    <NavlinkTab />
                 </div>
             </div>
         </div>

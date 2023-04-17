@@ -74,7 +74,7 @@
 #navbar #navItem2 .navlinks-tab{
   /* border:1px solid red; */
   position:absolute;
-  width:100%;
+  width:60%;
   height: 850%;
   top:250%;
   justify-content: space-evenly;
@@ -83,7 +83,7 @@
 }
 #navlink-tab{
   position:relative;
-  width:15%;
+  width:30%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
