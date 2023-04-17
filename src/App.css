@@ -83,7 +83,7 @@
 }
 #navlink-tab{
   position:relative;
-  width:30%;
+  width:25%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -99,6 +99,7 @@
   align-items: center;
   justify-content: center;
   transition:0.1s linear;
+  /* font-size:200%; */
 }
 #navlink-tab a:hover{
   background: rgba(185, 180, 180, 0.4);
