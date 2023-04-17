@@ -13,6 +13,12 @@ const Carz = () => {
                 <div className="carzRight">
                     <div className="carzInfo">
                         <div id="info-bridge"></div>
+                        <div id="info-title">
+                            <h3>KROM <br />FLEETS</h3>
+                            <span>
+                                <p>FOLLOW US</p>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>

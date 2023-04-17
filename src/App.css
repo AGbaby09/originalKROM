@@ -540,6 +540,7 @@
   height:110%;
 }
 .carzInfo{
+  position: relative;
   width:100%;
   height:100%;
   display: flex;
@@ -555,6 +556,22 @@
 .carzInfo #info-bridge{
   width:15%;
   height:50%;
-  background:white;
+  background:#333;
   transform:translateX(-38.5vh);
+}
+.carzInfo #info-title{
+  position: absolute;
+  width:100%;
+  height:100%;
+  color:rgb(255, 255, 255, 0.9);
+  /* background-color: rgb(255, 0, 0, 0.3); */
+  display: flex;
+  align-items:center;
+  /* justify-content:center; */
+}
+.carzInfo #info-title h3{
+  /* border:1px solid white; */
+  font-size: 3vh;
+  line-height: 5vh;
+  transform: translateY(-2vh);
 }
