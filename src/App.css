@@ -35,23 +35,24 @@
   position:relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height:60%;
-  width:10%;
+  /* background:white; */
+  width:11%;
 }
 #navbar #navItem1 #logoVideo{
   position:relative;
-  background:white;
-  height:100%;
-  width:30%;
+  height:4vh;
+  width:4vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow:hidden;
+  border-radius:50%;
 }
 #navbar #navItem1 #logoVideo video{
-  width:200%;
-  height:200%;
+  width:215%;
+  height:215%;
   object-fit:cover;
   object-position:center;
 }
