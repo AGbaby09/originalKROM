@@ -95,16 +95,6 @@
 #navbar #navItem2 a:hover i{
   display: none;
 }
-#navbar #navItem2 .navlinks-tab{
-  /* border:1px solid red; */
-  position:absolute;
-  width:64%;
-  height: 200%;
-  top:100%;
-  justify-content: space-evenly;
-  display:flex;
-  align-items:center;
-}
 #navlink-tab{
   position:absolute;
   transform:translateY(74%);
@@ -177,7 +167,16 @@
 .catalog .leftSide .text1 h1{
   font-size: 11vh;
   /* transform: translateY(50%); */
-  animation: showUP 1.5s ease;
+  animation: showUP 1.5s ease, glow 3s ease-in-out infinite;
+  /* animation: showUP 1.5s ease; */
+}
+@keyframes glow {
+  0%, 100%{
+    color:rgb(255, 255, 255, 0.8);
+  }
+  50%{
+    color:rgb(255, 255, 255, 0.9);
+  }
 }
 @keyframes showUP {
   0%{
@@ -587,6 +586,7 @@
   padding: 0 15%;
   transition: 0.1s linear;
   /* justify-content:space-between; */
+  z-index: 10;
 }
 
 .carzInfo #info-title span p{

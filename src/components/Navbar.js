@@ -28,11 +28,6 @@ const Navbar = ({logoIMG}) => {
                 <span>
                     <a href="/">LOGIN <i class='bx bx-log-in-circle' ></i></a>
                 </span>
-
-                <div className="navlinks-tab">
-                    {/* <NavlinkTab />
-                    <NavlinkTab /> */}
-                </div>
             </div>
         </div>
     );
