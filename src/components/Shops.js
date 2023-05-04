@@ -1,5 +1,6 @@
 import ShopCard from "./ShopCard";
 import ShopImg from '../assets/thriftSTORE.png'
+import Labs from '../assets/Labs.JPG'
 const Shops = () => {
     return ( 
         <div id='shops'>
@@ -13,10 +14,10 @@ const Shops = () => {
                 <ShopCard 
                     imgURL={ShopImg}
                     imgTITLE='Krom Thrift' 
-                    imgDESC='One of One backpack and accessories. All items are one of one unless stated'
+                    imgDESC='One of One backpacks and accessories. All items are one of one unless stated'
                 ></ShopCard>
                 <ShopCard 
-                    imgURL={ShopImg} 
+                    imgURL={Labs} 
                     imgTITLE='Krom Labs' 
                     imgDESC='We deal in pproject managementand Basic Design and Technology'
                 ></ShopCard>

@@ -548,6 +548,7 @@
   justify-content:center;
   padding: 0 20%;
   color: rgb(255, 255, 255, 0.9);
+  /* border: 1px solid red; */
 }
 .carzInfo p{
   font-size:1.5vh;
