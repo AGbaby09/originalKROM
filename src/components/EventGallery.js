@@ -1,5 +1,6 @@
 import Obiaa from '../assets/Obiaa.MP4';
 import TWM from '../assets/TWM.mp4';
+import TWM1 from '../assets/TWM1.mp4';
 import VideoEvG from "./VideoEvG";
 const EventsGallery = () => {
     return ( 
@@ -9,7 +10,7 @@ const EventsGallery = () => {
             </div>
             <div id="eventRight">
                 <div id="eventRightTop">
-                    <VideoEvG vidURL={Obiaa}></VideoEvG>
+                    <VideoEvG vidURL={TWM1}></VideoEvG>
                 </div>
                 <div id="eventRightCenter">
                 </div>
