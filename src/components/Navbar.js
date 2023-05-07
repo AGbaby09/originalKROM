@@ -22,7 +22,7 @@ const Navbar = ({logoIMG}) => {
                     
                 </span>
                 <span>
-                    <a href="/">CARZ</a>
+                    <a href="/">FLEETZ</a>
                     
                 </span>
                 <span>

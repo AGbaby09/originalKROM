@@ -15,7 +15,7 @@ const Carz = () => {
                     <div className="carzInfo">
                         <div id="info-bridge"></div>
                         <div id="info-title">
-                            <h3>KROM <br />FLEETS</h3>
+                            <h3>KROM <br />FLEETZ</h3>
                             <CustomNav />
                         </div>
                     </div>
