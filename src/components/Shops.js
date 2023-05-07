@@ -16,6 +16,7 @@ const Shops = () => {
                     imgURL={Labs} 
                     imgTITLE='Krom Labs' 
                     imgDESC='We deal in pproject managementand Basic Design and Technology'
+                    shopHref='/Labs'
                 ></ShopCard>
                 
                 
@@ -23,12 +24,14 @@ const Shops = () => {
                     imgURL={BURNERS} 
                     imgTITLE='BB Burners' 
                     imgDESC='Burner Phones for sale. Sustainable, Affordale, and NationwidaDelivery'
+                    shopHref='/Burner'
                 ></ShopCard>
 
                 <ShopCard 
                     imgURL={ShopImg}
                     imgTITLE='Krom Thrift' 
                     imgDESC='One of One backpacks and accessories. All items are one of one unless stated'
+                    shopHref='/Thrift'
                 ></ShopCard>
             </div>
         </div>

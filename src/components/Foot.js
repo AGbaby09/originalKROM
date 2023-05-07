@@ -26,4 +26,4 @@ const Foot = () => {
     );
 }
  
-export default Foot;
+export default Foot; 

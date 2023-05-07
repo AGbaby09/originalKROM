@@ -1,0 +1,17 @@
+#kromLabs{
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+#kromLabs section{
+    width: 100%;
+    height: 100vh;
+}
+#kromLabs #section1{
+    background: crimson;
+    width: 100%;
+    height: 100vh;
+}
+#kromLabs #section2{
+    background: teal;
+}

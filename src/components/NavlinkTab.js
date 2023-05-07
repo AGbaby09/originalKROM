@@ -1,10 +1,9 @@
 const NavlinkTab = () => {
     return ( 
         <div id="navlink-tab">
-            <a href="/">#about</a>
-            <a href="/">#thrift</a>
-            <a href="/">#burners</a>
-            <a href="/">#labs</a>
+            <a href="/Thrift">#thrift</a>
+            <a href="/Burner">#burners</a>
+            <a href="/Labs">#labs</a>
         </div>
      );
 }

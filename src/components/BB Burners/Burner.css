@@ -1,0 +1,17 @@
+#bbBurners{
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+#bbBurners section{
+    width: 100%;
+    height: 100vh;
+}
+#bbBurners #section1{
+    background: pink;
+    width: 100%;
+    height: 100vh;
+}
+#bbBurners #section2{
+    background: grey;
+}

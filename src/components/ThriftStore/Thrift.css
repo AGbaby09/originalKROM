@@ -1,0 +1,17 @@
+#thriftStore{
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+#thriftStore section{
+    width: 100%;
+    height: 100vh;
+}
+#thriftStore #section1{
+    background: gold;
+    width: 100%;
+    height: 100vh;
+}
+#thriftStore #section2{
+    background: teal;
+}
