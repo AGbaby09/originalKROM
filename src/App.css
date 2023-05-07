@@ -92,8 +92,8 @@
   font-size:2vh;
   transition:0.1s linear;
 }
-#navbar #navItem2 a:hover i{
-  display: none;
+#navbar #navItem2 a:hover .bx-chevron-down{
+  transform:rotate(360deg);
 }
 #navlink-tab{
   position:absolute;
@@ -309,7 +309,7 @@
 }
 .catalogy #shops .shopShops .shopCard{
   position: relative;
-  width:25%;
+  width:22.5%;
   height: 50%;
   background:linear-gradient(to bottom, #333, #333, #333, transparent, transparent);
   -webkit-box-reflect: below 2.5px linear-gradient(to bottom, transparent, transparent,transparent, rgba(0,0,0,0.2));
@@ -334,6 +334,7 @@
   transition: 0.5s ease;
   z-index: 5;
   border-radius: 20px;
+  background-color: black;
 }
 .catalogy #shops .shopShops .shopCard .description{
   /* border: 4px solid gold; */
@@ -550,6 +551,17 @@
   color: rgb(255, 255, 255, 0.9);
   /* border: 1px solid red; */
 }
+#headT{
+  /* border:1px solid red; */
+  position: absolute;
+  top: 10%;
+  width: 50vw;
+  justify-content: center;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+}
 .carzInfo p{
   font-size:1.5vh;
   text-align: justify;
@@ -589,7 +601,29 @@
   /* justify-content:space-between; */
   z-index: 10;
 }
-
+#carList{
+  position: absolute;
+  left: 15%;
+  /* border:1px solid teal; */
+}
+#carList :nth-child(2){
+  transform: translateX(100%);
+}
+#carList :nth-child(3){
+  transform: translateX(200%);
+}
+#carList li{
+  list-style-type: none;
+  padding: 10% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 1.5vh;
+}
+#carList li i{
+  font-size: 2.5vh;
+}
 .carzInfo #info-title span p{
   color:white;
   width: 20%;
@@ -694,4 +728,87 @@
     transform: translateY(0%) ;
     opacity: 1;
   }
+}
+footer{
+  height:30vh;
+  width:100vw;
+  position:relative;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color:teal; */
+  color:rgb(255, 255, 255, 0.8);
+}
+.foot{
+  /* border:1px solid white; */
+  width:30%;
+  height: 95%;
+  position:relative;
+}
+.foot h3{
+  font-family:'Poppins', sans-serif;
+  /* text-align:center; */
+  padding:6% 0 4% 0;
+  letter-spacing: 1vh;
+  font-size: 2vh;
+  margin: 5% 0 0 0;
+}
+.foot p{
+  font-family:'Poppins', sans-serif;
+  padding:0 0 2% 0;
+  width:55%;
+  min-width:55%;
+  text-align:justify;
+  font-size: 1.6vh; 
+}
+.foot input{
+  font-family:'Poppins', sans-serif;
+  width: 50%;
+  height:100%;
+  font-size: 1.6vh;
+  padding:0 2%;
+  background-color:#333;
+  color:rgb(255, 255, 255, 0.8);
+  border-radius: 0.5vh;
+}
+.foot input::placeholder{
+  font-size: 1.6vh;
+}
+#mailTo{
+  display:flex;
+  align-items: center;
+  /* justify-content: start; */
+  height:20%;
+  /* border:1px solid red; */
+  position: relative;
+}
+.bx-mail-send{
+  position:absolute;
+  font-size:2.5vh;
+  right: 50%;
+  transform:translateX(-50%);
+  cursor:pointer;
+  transition: 0.1s;
+}
+.bx-mail-send:hover{
+  font-size:2.6vh;
+}
+.foot a{
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.8);
+  /* height: 5vh; */
+  /* padding: 0 0 2vh 0; */
+  /* margin-bottom: 2vh; */
+}
+#socials{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#contacts{
+  display: grid;
+}
+#socials i{
+  font-size:5vh;
+  cursor: pointer;
 }

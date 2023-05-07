@@ -1,6 +1,7 @@
 import ShopCard from "./ShopCard";
 import ShopImg from '../assets/thriftSTORE.png'
 import Labs from '../assets/Labs.JPG'
+import BURNERS from '../assets/Burner2.png'
 const Shops = () => {
     return ( 
         <div id='shops'>
@@ -12,19 +13,22 @@ const Shops = () => {
             </div>
             <div className="shopShops">
                 <ShopCard 
-                    imgURL={ShopImg}
-                    imgTITLE='Krom Thrift' 
-                    imgDESC='One of One backpacks and accessories. All items are one of one unless stated'
-                ></ShopCard>
-                <ShopCard 
                     imgURL={Labs} 
                     imgTITLE='Krom Labs' 
                     imgDESC='We deal in pproject managementand Basic Design and Technology'
                 ></ShopCard>
+                
+                
                 <ShopCard 
-                    imgURL={ShopImg} 
+                    imgURL={BURNERS} 
                     imgTITLE='BB Burners' 
                     imgDESC='Burner Phones for sale. Sustainable, Affordale, and NationwidaDelivery'
+                ></ShopCard>
+
+                <ShopCard 
+                    imgURL={ShopImg}
+                    imgTITLE='Krom Thrift' 
+                    imgDESC='One of One backpacks and accessories. All items are one of one unless stated'
                 ></ShopCard>
             </div>
         </div>

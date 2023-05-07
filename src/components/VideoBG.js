@@ -1,6 +1,7 @@
 import Carz from "./Carz";
 import CatalogText from "./CatalogText";
 import Events from "./Events";
+import Foot from "./Foot";
 import Shops from './Shops';
 const VideoBG = ({url}) => {
     return ( 
@@ -18,7 +19,7 @@ const VideoBG = ({url}) => {
             <div className="cataloga">
                 <Events></Events>
             </div>
-            
+            <Foot/>
         </>
      );
 }

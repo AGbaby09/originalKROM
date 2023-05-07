@@ -24,10 +24,11 @@ const Carz = () => {
             <div className="carzBottom carzSide">
                 <div className="carzLeft">
                     <div className="carzInfo">
-                        <ul>
-                            <li>Pickup or Delivery</li>
-                            <li>Delivery within 24HRS</li>
-                            <li>Payment on Delivery</li>
+                        <h3 id='headT'>Life is a journey so choose your car wisely.  Buy your dream car from us.</h3>
+                        <ul id="carList">
+                            <li><i class='bx bx-check-double' ></i> Pickup or Delivery</li>
+                            <li><i class='bx bx-check-double' ></i> Delivery within 24HRS</li>
+                            <li><i class='bx bx-check-double' ></i> Payment on Delivery</li>
                         </ul>
                     </div>
                 </div>

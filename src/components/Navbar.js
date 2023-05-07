@@ -18,12 +18,12 @@ const Navbar = ({logoIMG}) => {
                     <NavlinkTab />
                 </span>
                 <span>
-                    <a href="/">EVENTS <i class='bx bx-chevron-down'></i></a>
-                    <NavlinkTab />
+                    <a href="/">EVENTS</a>
+                    
                 </span>
                 <span>
-                    <a href="/">CARZ <i class='bx bx-chevron-down'></i></a>
-                    <NavlinkTab />
+                    <a href="/">CARZ</a>
+                    
                 </span>
                 <span>
                     <a href="/">LOGIN <i class='bx bx-log-in-circle' ></i></a>
