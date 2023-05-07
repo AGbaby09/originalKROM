@@ -67,6 +67,21 @@
   width: 40vw;
   height: 100%;
 }
+#navbar #navItem2 button{
+  background: transparent;
+  font-size: 1.3vh;
+  color: rgb(255, 255, 255, 0.9);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width:100%;
+  border:none;
+  transition: 1s linear;
+  cursor: pointer;
+}
+
 #navbar #navItem2 span{
   position:relative;
   display: flex;
@@ -88,11 +103,11 @@
   width:100%;
   transition: 1s linear;
 }
-#navbar #navItem2 a i{
+#navbar #navItem2 button i{
   font-size:2vh;
   transition:0.1s linear;
 }
-#navbar #navItem2 a:hover .bx-chevron-down{
+#navbar #navItem2 button:hover .bx-chevron-down{
   transform:rotate(360deg);
 }
 #navlink-tab{
@@ -107,7 +122,7 @@
   -webkit-backdrop-filter: blur(10.3px);
   border-radius: 0 0 5px 5px;
   padding: 0.5vh 0;
-  transition:0.1s linear;
+  transition:0.1s;
   z-index: 1;
   visibility:hidden;
 }

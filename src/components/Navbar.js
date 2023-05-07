@@ -1,4 +1,5 @@
 import NavlinkTab from "./NavlinkTab";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Navbar = ({logoIMG}) => {
     return ( 
@@ -11,22 +12,22 @@ const Navbar = ({logoIMG}) => {
             </div>
             <div id="navItem2">
                 <span>
-                    <a href="/">HOME</a>
+                    <Link to="/">HOME</Link>
                 </span>
                 <span>
-                    <a href="/">SHOPS <i class='bx bx-chevron-down'></i></a>
+                    <button>SHOPS <i class='bx bx-chevron-down'></i></button>
                     <NavlinkTab />
                 </span>
                 <span>
-                    <a href="/">EVENTS</a>
+                    <Link to="/Events">EVENTS</Link>
                     
                 </span>
                 <span>
-                    <a href="/">FLEETZ</a>
+                    <Link to="/Fleetz">FLEETZ</Link>
                     
                 </span>
                 <span>
-                    <a href="/">LOGIN <i class='bx bx-log-in-circle' ></i></a>
+                    <Link to="/Login">LOGIN <i class='bx bx-log-in-circle' ></i></Link>
                 </span>
             </div>
         </div>
