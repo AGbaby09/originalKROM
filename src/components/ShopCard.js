@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom/cjs/react-router-dom";
+
 const ShopCard = ({imgURL, imgTITLE, imgDESC, shopHref}) => {
     return ( 
         <div id="shopCard" className="shopCard">
@@ -6,7 +8,7 @@ const ShopCard = ({imgURL, imgTITLE, imgDESC, shopHref}) => {
                 <h1>{imgTITLE}</h1>
                 <p>{imgDESC}</p>
                 <div className="button">
-                    <a href={shopHref}>Shop Now</a>
+                    <Link to={shopHref}>Shop Now</Link>
                 </div>
             </div>
         </div>

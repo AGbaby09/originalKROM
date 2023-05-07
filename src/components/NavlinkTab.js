@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom/cjs/react-router-dom";
+
 const NavlinkTab = () => {
     return ( 
         <div id="navlink-tab">
-            <a href="/Thrift">#thrift</a>
-            <a href="/Burner">#burners</a>
-            <a href="/Labs">#labs</a>
+            <Link to="/Thrift">#thrift</Link>
+            <Link to="/Burner">#burners</Link>
+            <Link to="/Labs">#labs</Link>
         </div>
      );
 }
