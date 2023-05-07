@@ -3,13 +3,23 @@ import Obiaa from './assets/Obiaa.MP4';
 import VideoBG from './components/VideoBG';
 import Navbar from './components/Navbar';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
-    <div id='appMain'>
-      <Navbar logoIMG={Obiaa}/>
-      <VideoBG url={videoURL}/>
-    </div>  
+    <Router>
+      <div id='appMain'>
+        <Navbar logoIMG={Obiaa}/>
+        <Switch>
+          <Route exact path='/'>
+            <VideoBG url={videoURL}/>
+          </Route>
+          <Route path='/Thrift'>
+            
+          </Route>
+        </Switch>
+      </div>  
+    </Router>
   );
 }
 
