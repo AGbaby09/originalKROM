@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Thrift from './components/ThriftStore/Thrift';
 import Burner from './components/BB Burners/Burner';
 import Labs from './components/Labs/Labs';
+import Login from './components/Login/Login';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
@@ -29,6 +30,14 @@ function App() {
 
           <Route path="/Labs">
             <Labs/>
+          </Route>
+
+          <Route path="/Login">
+            <Login/>
+          </Route>
+
+          <Route path="/SignUp">
+            <Login/>
           </Route>
 
         </Switch>

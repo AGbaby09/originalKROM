@@ -4,14 +4,15 @@
     position: relative;
 }
 #kromLabs section{
+    position: relative;
     width: 100%;
     height: 100vh;
 }
 #kromLabs #section1{
-    background: crimson;
+    background: url('./Labs.JPG');
     width: 100%;
     height: 100vh;
-}
-#kromLabs #section2{
-    background: teal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

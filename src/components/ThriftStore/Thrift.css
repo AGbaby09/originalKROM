@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 #thriftStore{
     width: 100vw;
     height: auto;
@@ -6,12 +7,198 @@
 #thriftStore section{
     width: 100%;
     height: 100vh;
+    position: relative;
 }
+
 #thriftStore #section1{
-    background: gold;
+    /* background: gold; */
     width: 100%;
     height: 100vh;
 }
-#thriftStore #section2{
-    background: teal;
+#thriftStore #section1 #top{
+    width: 100%;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+#thriftStore #section1 #top h1{
+    /* font-family: "Poppins", sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 35vh;
+    letter-spacing: -2vh;
+    color: rgb(255, 255, 255, 0.9);
+}
+
+#logoBanner{
+    background-color: rgb(255, 255, 0, 0.7);
+    display: flex;
+    position: absolute;
+    width: 102%;
+    height: 2.5vh;
+    align-items: center;
+    /* top: 50%; */
+    left: -1%;
+    /* transform: translateY(-50%); */
+    transform: rotate(-6deg);
+    white-space: nowrap;
+    z-index: 2;
+}
+#logoBanneR{
+    background-color: rgb(255, 255, 0, 0.7);
+    display: flex;
+    position: absolute;
+    width: 102%;
+    height: 2.5vh;
+    align-items: center;
+    /* top: ; */
+    left: -1%;
+    /* transform: translateY(-50%); */
+    transform: rotate(6deg);
+    white-space: nowrap;
+    z-index: -1;
+}
+#logoBanner h3{
+    margin: 0 10px 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2vh;
+    display: inline-block;
+    position: absolute;
+    color: black;
+}
+#logoBanneR h3{
+    font-size: 2vh;
+    margin: 0 10px 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    color: black;
+}
+.word1{
+    animation: move1 20s linear infinite;
+    
+}
+.word2{
+    animation: move2 20s linear infinite;
+    transform: translateX(100%);
+}
+@keyframes move1 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes move2 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+#section1 main{
+    position: relative;
+    height: 20vh;
+    display: grid;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+#section1 main article{
+    position: relative;
+    top: 0;
+    margin: auto;
+    width: 20%;
+    height: 130px;
+}
+#section1 main article h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#section1 main article p{
+    color: rgb(150, 149, 149);
+    font-size: 16.1px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 22.3px;
+    font-weight:00;
+}
+/* #section1 main{
+    width: 100%;
+    position: relative;
+    display: grid;
+} */
+#section1 main .socialIcons{
+    position: relative;
+    top: -2vh;
+    padding: 5px 0 5px 0;
+    margin: auto;
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+.avatar{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: grid;
+    /* animation-delay: 3s; */
+    -webkit-box-reflect: below 0px  linear-gradient(transparent, transparent, transparent,#0004);
+}
+.avatar img{
+    object-fit: contain;
+    object-position: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+
+@keyframes bounce-top {
+    0% {
+      transform: translateY(-45px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    24% {
+      opacity: 0;
+    }
+    40% {
+      transform: translateY(-24px);
+      animation-timing-function: ease-in;
+    }
+    65% {
+      transform: translateY(-12px);
+      animation-timing-function: ease-in;
+    }
+    82% {
+      transform: translateY(-6px);
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: translateY(-4px);
+      animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
