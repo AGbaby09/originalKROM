@@ -1,7 +1,7 @@
 import ShopCard from "./ShopCard";
 import ShopImg from '../assets/thriftSTORE.png'
 import Labs from '../assets/Labs.JPG'
-import BURNERS from '../assets/Burner2.png'
+import BURNERS from '../assets/BB.jpg'
 const Shops = () => {
     return ( 
         <div id='shops'>
