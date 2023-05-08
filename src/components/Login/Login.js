@@ -4,17 +4,17 @@ const Login = () => {
     return ( 
         <main id='loginPage'>
             <form id='loginForm'>
-                <h1>Login</h1>
+                <h1>LOGIN</h1>
                 <div>
-                    <label>Email</label>
+                    <label>EMAIL</label>
                     <input className='input' type='email'></input>
                 </div>
                 <div>
-                    <label>Password</label>
+                    <label>PASSWORD</label>
                     <input className='input' type='password'></input>
                 </div>
                 <div>
-                    <input id='submit' type='submit' value='Login'></input>
+                    <input id='submit' type='submit' value='LOGIN'></input>
                 </div>
                 <div>
                     <p>Don't have an account? <Link to='/SignUp'>Sign Up</Link></p>

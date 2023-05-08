@@ -1,0 +1,91 @@
+#signUpPage{
+    background: url('./Login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#signUpForm{
+    /* border: 1px solid gold; */
+    position: relative;
+    width: 30%;
+    height: 80%;
+    border-radius: 5vh;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+}
+#signUpForm h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 10% 0;
+}
+#signUpForm div{
+    /* border: 1px solid gold; */
+    width: 100%;
+    height: 12%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#signUpForm div label{
+    position: absolute;
+    top: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 2% 0;
+}
+#signUpForm div .input{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 15%;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border: none; */
+  outline: none;
+  text-align: center;
+  padding: 0 5%;
+  color: rgba(255, 255, 255, 0.9);
+}
+#signUpForm div #submit{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    bottom: 15%;
+    background: rgba(51, 50, 50, 0.665);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: none; */
+    outline: none;
+    text-align: center;
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+#signUpForm div p{
+    color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-3vh);
+}
+#signUpForm div p a{
+    color: blue;
+}

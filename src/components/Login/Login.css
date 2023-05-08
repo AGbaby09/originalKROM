@@ -23,7 +23,7 @@
 }
 #loginForm h1{
     font-family: 'Courier New', Courier, monospace;
-    color: gold;
+    color: rgba(255, 255, 255, 0.9);
     text-align: center;
     padding: 15% 0;
 }
@@ -41,7 +41,7 @@
     top: 0;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
-    color: gold;
+    color: rgba(255, 255, 255, 0.9);
     padding: 2% 0;
 }
 #loginForm div .input{
@@ -51,15 +51,17 @@
     height: 50%;
     position: absolute;
     bottom: 15%;
-    background: rgba(255, 254, 254, 0.665);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
   /* border: none; */
   outline: none;
   text-align: center;
   padding: 0 5%;
+  color: rgba(255, 255, 255, 0.9);
 }
 #loginForm div #submit{
     font-family: 'Courier New', Courier, monospace;
@@ -69,17 +71,19 @@
     position: absolute;
     bottom: 15%;
     background: rgba(51, 50, 50, 0.665);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  /* border: none; */
-  outline: none;
-  text-align: center;
-  font-size: 2vh;color: gold;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: none; */
+    outline: none;
+    text-align: center;
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
 }
 #loginForm div p{
-    color: gold;
+    color: rgba(255, 255, 255, 0.9);
 }
 #loginForm div p a{
     color: blue;

@@ -51,6 +51,9 @@ const Thrift = () => {
                         </div>
                     </div>
                 </main>
+                <section>
+                    
+                </section>
             </section>
         </main>
     );

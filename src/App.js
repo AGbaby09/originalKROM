@@ -7,6 +7,7 @@ import Thrift from './components/ThriftStore/Thrift';
 import Burner from './components/BB Burners/Burner';
 import Labs from './components/Labs/Labs';
 import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
           </Route>
 
           <Route path="/SignUp">
-            <Login/>
+            <SignUp/>
           </Route>
 
         </Switch>
