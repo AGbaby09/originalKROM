@@ -19,12 +19,10 @@ const Navbar = ({logoIMG}) => {
                     <NavlinkTab />
                 </span>
                 <span>
-                    <Link to="/Events">EVENTS</Link>
-                    
+                    <Link to="/Fleetz">FLEETZ</Link>
                 </span>
                 <span>
-                    <Link to="/Fleetz">FLEETZ</Link>
-                    
+                    <Link to="/Events">EVENTS</Link>
                 </span>
                 <span>
                     <Link to="/Login">LOGIN <i class='bx bx-log-in-circle' ></i></Link>

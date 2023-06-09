@@ -1,0 +1,51 @@
+#fleetz{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: relative;
+}
+#fleetzHead{
+    height: 100%;
+    width: 100%;
+    background: url('./car2.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 6s linear;
+}
+.fleetzHeader{
+    transition: 1s linear;
+    /* top: -100% */
+}
+#fleetzHead h1{
+    position: absolute;
+    font-size: 3vh;
+    top: 40%;
+    color: white;
+}
+button{
+    background-color: transparent;
+    color: white;
+    padding: 2.5vh 5vw;
+    border: 1px solid white;
+    border-radius:5vh;
+    font-size: 2vh;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover{
+    font-size: 2.1vh;
+    background-color: rgb(255, 255, 255, 0.2);
+    color: white;
+}
+
+#taskbar{
+    height: 100%;
+    width: 100%;
+    background: gold;
+}

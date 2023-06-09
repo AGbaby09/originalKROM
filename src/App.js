@@ -8,6 +8,7 @@ import Burner from './components/BB Burners/Burner';
 import Labs from './components/Labs/Labs';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+import Fleetz from './components/fleetz/Fleetz';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
@@ -39,6 +40,10 @@ function App() {
 
           <Route path="/SignUp">
             <SignUp/>
+          </Route>
+          
+          <Route path="/Fleetz">
+            <Fleetz/>
           </Route>
 
         </Switch>
